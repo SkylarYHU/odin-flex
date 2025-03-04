@@ -4,69 +4,89 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Flex Website</title>
-  <link rel="stylesheet" href="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <div>Header Logo</div>
-      <div>
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">Header Logo</div>
+      <ul class="nav-link">
         <li>header link one</li>
         <li>header link two</li>
         <li>header link three</li>
-      </div>
+      </ul>
     </nav>
   </header>
 
-  <section>
-    <div>
-      <h1>This Website is awesome</h1>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio ad blanditiis aut, cumque cum neque beatae alias sequi!</p>
-      <a href="">Sign up</a>
-    </div>
-    <div>
-      <img src="https://images.unsplash.com/photo-1498075702571-ecb018f3752d?q=80&w=2956&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-    </div>
-  </section>
-
-  <section>
-    <h2>Some random information.</h2>
-    <div>
-      <div>
-        <img src="https://images.unsplash.com/vector-1739847838117-ed04bd52ed18?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+  <section class="hero">
+    <div class="hero-container">
+      <div class="hero-left">
+        <h1>This Website is awesome</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio ad blanditiis aut, cumque cum neque beatae alias sequi!</p>
+        <a href="">Sign up</a>
       </div>
       <div>
-        <img src="https://images.unsplash.com/vector-1740699300549-0cab8c23d479?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-      </div>
-      <div>
-        <img src="https://images.unsplash.com/vector-1740699300579-e34510cc0ce3?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-      </div>
-      <div>
-        <img src="https://images.unsplash.com/vector-1740330559962-8885508cca64?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <img class="hero-img" src="https://images.unsplash.com/photo-1498075702571-ecb018f3752d?q=80&w=2956&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
       </div>
     </div>
   </section>
 
-  <section>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, odit explicabo delectus omnis cumque assumenda! Quas sunt distinctio aspernatur aperiam quisquam.</p>
-    <p>-Thor, God of Thunder</p>
-  </section>
+  <section class="info-section">
+    <div class="info-container">
+      <h2>Some random information.</h2>
+      <div class="info-card">
+        <div>
+          <div class="img-container">
+            <img class='info-img' src="https://images.unsplash.com/vector-1739847838117-ed04bd52ed18?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
+        
+        <div>
+          <div class="img-container">
+            <img class='info-img' src="https://images.unsplash.com/vector-1740699300549-0cab8c23d479?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
 
-  <section>
-    <div>
-      <div>
-        <p>Lorem ipsum dolor sit amet consectetur.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, porro eaque?</p>
+        <div>
+          <div class="img-container">
+            <img class='info-img' src="https://images.unsplash.com/vector-1740699300579-e34510cc0ce3?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
+        
+        <div>
+          <div class="img-container">
+            <img class='info-img' src="https://images.unsplash.com/vector-1740330559962-8885508cca64?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
       </div>
-      <a href="">Sign up</a>
     </div>
   </section>
 
-  <footer>
+  <section class="quote">
+    <div class="quote-container">
+      <p class="quote-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, odit explicabo delectus omnis cumque assumenda! Quas sunt distinctio aspernatur aperiam quisquam.</p>
+      <p class="author">-Thor, God of Thunder</p>
+    </div>
+  </section>
+
+  <section class="action">
+    <div class="action-container">
+      <div>
+        <p class="action-title">Lorem ipsum dolor sit amet consectetur.</p>
+        <p class="action-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, porro eaque?</p>
+      </div>
+      <a href="" class="btn">Sign up</a>
+    </div>
+  </section>
+
+  <footer class="footer">
     <p>Copyright © The odin project 2025</p>
   </footer>
 </body>
